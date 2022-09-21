@@ -1,0 +1,30 @@
+@use '../util' as *;
+
+.flex {
+    display: flex;
+    gap: var(--gap, rem(16));
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, rem(16));
+}
+
+.d-block {
+    display: block;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, rem(16));
+}
+
+.flow--space-small {
+    --flow-space: rem(12);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: rem(1280);
+}
+
