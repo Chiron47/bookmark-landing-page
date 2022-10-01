@@ -41,8 +41,8 @@ p {
 
 /* set up the body */
 body {
-    // font-family: var(--ff-sans-normal);
-    // font-size: var(--fs-400);
+    font-family: var(--ff-rubik);
+    font-size: var(--fs-400);
     // color: hsl( var(--clr-white) );
     // background-color: hsl( var(--clr-dark) );
     // line-height: 1.5;
@@ -69,6 +69,11 @@ select {
     font: inherit;
 }
 
+// Remove text decoration from links
+a {
+    text-decoration: none;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {  
   *,
@@ -93,3 +98,19 @@ select {
     white-space: nowrap; /* added line */
     border: 0;
   }
+
+// Classes for skip to content button
+  .skip-to-content {
+    position: absolute;
+    z-index: 9999;
+    background: hsl( var(--clr-white) );
+    color: hsl( var(--clr-dark) ); 
+    padding: .5em 1em;
+    margin-inline: auto;
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in;
+}
+
+.skip-to-content:focus {
+    transform: translateY(0);
+}

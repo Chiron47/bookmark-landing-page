@@ -1,0 +1,14 @@
+@use '../util' as *;
+
+.btn {
+    padding: rem(16) rem(34);
+    border-radius: rem(5);
+    font-family: var(--ff-rubik);
+    font-weight: 400;
+    color: white;
+    background-color: hsl( var(--primary-soft-blue) );
+
+    &--accent {
+        background-color: hsl( var(--primary-soft-red) );
+    }
+}

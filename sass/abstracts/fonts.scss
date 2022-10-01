@@ -1,0 +1,40 @@
+:root {
+        // font sizes
+        --fs-h-1: clamp(rem(24), 10vw + rem(16), rem(36));
+        --fs-h-2: clamp(rem(18), 7vw + rem(16), rem(24));
+    
+        --fs-p-1: clamp(rem(12), 5vw + rem(6), rem(14));
+        --fs-p-2: rem(12);
+        --fs-p-3: rem(10);
+
+        // Font families
+        --ff-rubik: 'Rubik', sans-serif;
+}
+
+// Utility classes
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500 }
+
+.uppercase { text-transform: uppercase; }
+
+.fs-h-1 { font-size: var(--fs-h-1); }
+.fs-h-2 { font-size: var(--fs-h-2); }
+.fs-p-1 { font-size: var(--fs-p-1); }
+.fs-p-2 { font-size: var(--fs-p-2); }
+.fs-p-3 { font-size: var(--fs-p-3); }
+
+.letter-spacing-1 { letter-spacing: rem(4.75); } 
+.letter-spacing-2 { letter-spacing: rem(2.7); } 
+.letter-spacing-3 { letter-spacing: rem(2.35); } 
+
+// Set line hieght
+.fs-h-1,
+.fs-h-2 {
+    line-height: 0.5;
+}
+
+.fs-p-1,
+.fs-p-2,
+.fs-p-3 {
+    line-height: 1.2;
+}
